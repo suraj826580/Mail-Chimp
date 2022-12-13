@@ -1,1 +1,1 @@
-Clone of Mailchimp
+➡️ Clone of Mailchimp
