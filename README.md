@@ -1,1 +1,1 @@
-# snappy-cars-9183
+Clone of Mailchimp
