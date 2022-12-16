@@ -181,7 +181,6 @@
   font-family: Graphik Web, Helvetica Neue, Helvetica, Arial, Verdana,
     sans-serif;
   margin-top: 25px;
-
   line-height: 30px;
 }
 /* Plans Css */
@@ -297,7 +296,10 @@ i {
   border-bottom: 1px dotted;
   color: #94a0a5;
 }
-
+#navbtn a {
+  text-decoration: none;
+  color: #403b3b;
+}
 #plansBottomHeader {
   font-size: 30px;
   line-height: 40px;
@@ -326,7 +328,7 @@ i {
   height: 100vh;
   width: 50%;
   background-color: #ffe01b;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: sticky;
   top: 0;
   box-sizing: border-box;
