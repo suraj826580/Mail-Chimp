@@ -32,7 +32,10 @@
   display: flex;
   justify-content: space-between;
 }
-
+#list ul a {
+  color: #241c15;
+  text-decoration: none;
+}
 #logo {
   display: flex;
 }
@@ -107,7 +110,9 @@
   border-radius: 600px;
   background-color: #ffe01b;
 }
-
+#revenue a {
+  text-decoration: none;
+}
 /* Initial Cards Of image */
 
 #imgCards {
