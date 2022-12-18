@@ -3,7 +3,87 @@
   margin: 0;
   box-sizing: border-box;
 }
+#top > #closebtn {
+  text-align: right;
+  background-color: #ffe01b;
+  display: inline-block;
+  margin-left: 80%;
+  padding: 7px 17px;
+  border-radius: 500px;
+  font-size: 35px;
+}
 
+#slidepanel {
+  width: 0px;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  top: 90px;
+  left: 0;
+  font-family: Graphik Web, Helvetica Neue, Helvetica, Arial, Verdana,
+    sans-serif;
+  transition: 0.4s ease-in-out;
+}
+#top h2 {
+  font-size: 15px;
+  color: #6e7375;
+}
+
+#slidepanel div {
+  padding: 30px 60px;
+}
+#top a {
+  display: block;
+  font-size: 25px;
+  padding: 10px 0px;
+  text-decoration: none;
+  color: black;
+}
+#top a:hover {
+  color: #6e7375;
+  transform: scale(1.01);
+}
+#top1 a:hover {
+  color: #6e7375;
+  transform: scale(1.01);
+}
+
+#top a:nth-child(3) {
+  padding-bottom: 25px;
+  border-bottom: 1px solid;
+}
+#top2 h2 {
+  margin-top: -20px;
+  margin-bottom: 15px;
+}
+#top2 a {
+  text-decoration: none;
+
+  font-size: 15px;
+}
+/* Slide Panel top 1 */
+#top1 {
+  font-size: 15px;
+  color: #6e7375;
+  margin-top: 0px;
+}
+#top1 h2 {
+  font-size: 15px;
+  color: #6e7375;
+}
+#top1 a {
+  display: block;
+  font-size: 25px;
+  padding: 10px 0px;
+  text-decoration: none;
+  color: black;
+}
+#top1 a:nth-child(5) {
+  padding-bottom: 35px;
+  border-bottom: 1px solid;
+}
 /* CSS of Nav Bar */
 .sticky {
   position: fixed;
@@ -13,6 +93,7 @@
 
 #nav {
   display: flex;
+  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
   padding: 20px 55px;
@@ -41,6 +122,10 @@
 }
 #logo > div:nth-child(1) {
   width: 40px;
+  transition: 0.1s ease-in-out;
+}
+#logo > div:nth-child(1):hover {
+  transform: rotate(18deg);
 }
 #logo > div:nth-child(2) h3 {
   width: 40px;
@@ -56,6 +141,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.5s ease-in-out;
 }
 #navbtn button {
   font-weight: 500;
@@ -64,6 +150,18 @@
   box-sizing: border-box;
   padding: 15px 25px;
   border-radius: 500px;
+}
+#navbtn button:nth-child(1):hover {
+  box-sizing: border-box;
+  box-shadow: rgba(182, 174, 23, 0.1) 0px 4px 12px;
+  transform: scale(1.05);
+  border: 2px solid;
+}
+#navbtn button:nth-child(2):hover {
+  box-sizing: border-box;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: scale(1.05);
+  border: 2px solid;
 }
 
 #navbtn button:nth-child(2) {
@@ -78,6 +176,7 @@
   padding: 0px 5vh;
   box-sizing: border-box;
   padding: 70px 200px;
+  transition: 0.5s ease-in-out;
 }
 #revenue h1 {
   text-align: center;
@@ -99,6 +198,7 @@
   font-size: 1.5rem;
   color: #241c15;
 }
+
 #revenue button {
   display: block;
   margin: auto;
@@ -109,7 +209,15 @@
   padding: 15px 25px;
   border-radius: 600px;
   background-color: #ffe01b;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+#revenue button:hover {
+  box-sizing: border-box;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: scale(1.05);
+  border: 2px solid;
+}
+
 #revenue a {
   text-decoration: none;
 }
@@ -119,6 +227,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+
 #imgCards img {
   width: 100%;
   box-sizing: border-box;
@@ -141,7 +250,15 @@
   border-radius: 500px;
   font-family: Graphik Web, Helvetica Neue, Helvetica, Arial, Verdana,
     sans-serif;
+  transition: 0.1s ease-in-out;
 }
+.cardBottom button:hover {
+  box-sizing: border-box;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: scale(1.05);
+  border: 2px solid;
+}
+
 .color1 {
   background-color: #de9b21;
 }
@@ -154,6 +271,18 @@
 }
 .color4 {
   background-color: whitesmoke;
+}
+#imgCards img {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.img {
+  transition: 0.3s ease-in-out;
+}
+
+.img:hover {
+  transform: scale(1.02);
 }
 
 .text {
@@ -220,6 +349,10 @@
   color: rgba(36, 28, 21, 0.65);
   color: #403b3b;
   border: 1px #cfd8dc solid;
+}
+.card:hover {
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .typeOfMemberShip {
   padding: 10px 0px;
@@ -296,6 +429,13 @@ i {
   background-color: #ffe01b;
   font-family: Graphik Web, Helvetica Neue, Helvetica, Arial, Verdana,
     sans-serif;
+  transition: 0.1s ease-in-out;
+}
+#btmbtn:hover {
+  box-sizing: border-box;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: scale(1.03);
+  border: 2px solid;
 }
 #learnmore {
   border-bottom: 1px dotted;
@@ -680,7 +820,7 @@ i {
 #bottomfooter {
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding: 65px;
   padding-bottom: 80px;
   border-bottom: 1px solid rgba(121, 119, 116, 0.65);
 }
@@ -733,4 +873,13 @@ i {
 }
 #finalmargin {
   margin-bottom: 100px;
+}
+#bottomfooter li a:hover {
+  background-color: rgba(255, 224, 27, 0.65);
+  /* padding: 3px; */
+}
+#footerflex1 a:hover {
+  box-sizing: border-box;
+  background-color: rgba(255, 224, 27, 0.65);
+  /* padding: 3px; */
 }
